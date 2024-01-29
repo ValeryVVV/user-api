@@ -1,8 +1,8 @@
 {
-  "name": "users-api-test",
+  "name": "user-api",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ValeryVVV.github.io/users-api-test/",
+  "homepage": "https://ValeryVVV.github.io/user-api/",
   "dependencies": {
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
