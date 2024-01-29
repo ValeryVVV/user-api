@@ -5,6 +5,7 @@ import PostDetails from "../PostDetails/PostDetailsPage";
 import AlbumDetails from "../AlbumDetails/AlbumDetailsPage";
 import UsersCardId from "./UserCardId/UserCardId";
 import { Button, Typography } from "@mui/material";
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 const UserDetails = () => {
     const [user, setUser] = useState([]);
@@ -30,7 +31,7 @@ const UserDetails = () => {
             <Typography variant="h1">This user is not found</Typography>
         ) : (
             <>
-            <Link to={backLink}><Button sx={{ml: 6, mt: 3 }}>Go back</Button></Link>
+            <Link to={backLink}><Button startIcon={<ArrowBackIcon />} sx={{ml: 6, mt: 3 }}>Go back</Button></Link>
             <UsersCardId user={user} />
             </>
         )}
