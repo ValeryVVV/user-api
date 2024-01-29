@@ -10,56 +10,55 @@ export const NavBar = styled(Toolbar)({
 });
 
 export const HeaderNav = styled('div')({
-     display: 'block',
+    display: 'block',
     paddingLeft: '30px',
     '&:not(:last-child)': {
-         marginRight: '50px'
+        marginRight: '50px'
     }
 });
 
 export const LogoLink = styled(Link)({
     fontFamily: "Raleway",
-        fontWeight: '700',
-        fontSize: '26px',
-        lineHeight: '1.19',
-        color: '#2196F3',
+    fontWeight: '700',
+    fontSize: '26px',
+    lineHeight: '1.19',
+     color: '#2196F3',
     paddingLeft: '15px',
-        textDecoration: 'none'
+    textDecoration: 'none'
 });
 
 export const Logo = styled('span')({
     fontFamily: "Raleway",
-        fontWeight: '700',
-        fontSize: '26px',
-        lineHeight: '1.19',
-        color: '#2196F3',
-        paddingLeft: '15px'
+    fontWeight: '700',
+    fontSize: '26px',
+    lineHeight: '1.19',
+    color: '#2196F3',
+    paddingLeft: '15px'
 });
 
 export const LogoColor = styled('span')({
-     color: '#000000',
-        alignItems: 'center'
+    color: '#000000',
+    alignItems: 'center'
 });
 
 export const HeaderNavLink = styled(Link)({
-        display: 'block',
-        paddingTop: '32px',
-        paddingBottom: '32px',
-        fontWeight: '600',
-        fontSize: '16px',
-        lineHeight: '1.14',
-        letterSpacing: '0.02em',
+    display: 'block',
+    paddingTop: '32px',
+    paddingBottom: '32px',
+    fontWeight: '600',
+    fontSize: '16px',
+    lineHeight: '1.14',
+    letterSpacing: '0.02em',
     position: 'relative',
-        textDecoration: 'none',
+    textDecoration: 'none',
 
-        transition: 'color 250ms cubic-bezier(0.4, 0, 0.2, 1)',
-        color: '#212121',
+    transition: 'color 250ms cubic-bezier(0.4, 0, 0.2, 1)',
     
-        '&:hover, &:focus': {
-            color: '#2196f3',
-            transition: 'color 250ms cubic-bezier(0.4, 0, 0.2, 1)',
-    },
+    '&:hover, &:focus': {
         color: '#2196f3',
+        transition: 'color 250ms cubic-bezier(0.4, 0, 0.2, 1)',
+    },
+    color: '#2196f3',
 
     '&::before': {
         content: '""',
@@ -72,4 +71,3 @@ export const HeaderNavLink = styled(Link)({
         backgroundColor: '#2196f3',
     }
 });
-
