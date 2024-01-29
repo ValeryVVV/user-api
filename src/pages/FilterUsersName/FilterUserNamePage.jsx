@@ -1,16 +1,15 @@
 import React from "react";
-import { Box, TextField, Typography } from "@mui/material";
+import { TextField } from "@mui/material";
 
-import { useStyles } from "./FilterUserStyles";
+import { FilterBox, FilterText, FilterFlexBox } from "./FilterUserStyles";
 
 
 const FilterUserName = ({ value, onChange }) => {
-    const classes = useStyles();
 
     return (
-        <Box className={classes.container}>
-            <Box className={classes.flex}>
-                <Typography className={classes.text}>Filter by user name</Typography>
+        <FilterBox>
+            <FilterFlexBox>
+                <FilterText>Filter by user name</FilterText>
                 <TextField
                     size="small"
                     variant="outlined"
@@ -18,8 +17,8 @@ const FilterUserName = ({ value, onChange }) => {
                     value={value}
                     onChange={onChange}
                 />
-            </Box>
-        </Box>
+            </FilterFlexBox>
+        </FilterBox>
     )
 };
 
