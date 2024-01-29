@@ -1,6 +1,5 @@
 import React from "react";
 import { Box, TextField, Typography } from "@mui/material";
-import SearchIcon from '@mui/icons-material/Search';
 
 import { useStyles } from "./FilterUserStyles";
 
@@ -18,9 +17,6 @@ const FilterUserName = ({ value, onChange }) => {
                     type='text'
                     value={value}
                     onChange={onChange}
-                    InputProps={{ 
-                        startAdornment: <SearchIcon sx={{ pr: 1}}  position="start" />,
-                    }}
                 />
             </Box>
         </Box>
